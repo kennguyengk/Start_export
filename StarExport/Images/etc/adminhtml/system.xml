@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Test_TCode" translate="label" sortOrder="20">
+            <label>StarExport_Images</label>
+        </tab>
+        <section id="tcode" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>StarExport_Images Module</label>
+            <tab>Test_TCode</tab>
+            <resource>Magento_Cms::config_cms</resource>
+            <group id="basics" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Basic Options</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable StarExport_Images Module</label>
+                    <source_model>Magento\Cms\Model\Config\Source\Wysiwyg\Enabled</source_model>
+                </field>
+            </group>
+        </section>
+    </system>  
+</config>
